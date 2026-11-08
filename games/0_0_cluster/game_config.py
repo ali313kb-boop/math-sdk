@@ -67,14 +67,14 @@ class GameConfig(Config):
             (t4, "L4"): 4.0,
         }
         self.paytable = self.convert_range_table(pay_group)
-
         self.include_padding = True
         self.special_symbols = {"wild": ["W"], "scatter": ["S"]}
-self.freespin_triggers = {
-    self.basegame_type: {3: 8, 4: 10, 5: 12},
-    self.freegame_type: {3: 5, 4: 8, 5: 10, 6: 12, 7: 15, 8: 18},
-}
+
+        self.freespin_triggers = {
+            self.basegame_type: {3: 8, 4: 10, 5: 12},
+            self.freegame_type: {3: 5, 4: 8, 5: 10, 6: 12, 7: 15, 8: 18},
         }
+        
         self.anticipation_triggers = {
             self.basegame_type: min(self.freespin_triggers[self.basegame_type].keys()) - 1,
             self.freegame_type: min(self.freespin_triggers[self.freegame_type].keys()) - 1,
