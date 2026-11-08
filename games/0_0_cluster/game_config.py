@@ -27,9 +27,9 @@ class GameConfig(Config):
         self.construct_paths()
 
         # Game Dimensions
-        self.num_reels = 7
+        self.num_reels = 5
         # Optionally include variable number of rows per reel
-        self.num_rows = [7] * self.num_reels
+        self.num_rows = [6] * self.num_reels
         # Board and Symbol Properties
         t1, t2, t3, t4 = (5, 5), (6, 8), (9, 12), (13, 36)
         pay_group = {
