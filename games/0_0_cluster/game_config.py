@@ -164,24 +164,10 @@ class GameConfig(Config):
                                 self.basegame_type: {"BR0": 1},
                                 self.freegame_type: {"FR0": 1, "WCAP": 5},
                             },
-                            "mult_values": {
-                                self.basegame_type: {
-                                    2: 10,
-                                    3: 20,
-                                    4: 30,
-                                    5: 20,
-                                    10: 20,
-                                    20: 20,
-                                    50: 10,
-                                },
-                                self.freegame_type: {
-                                    2: 10,
-                                    3: 20,
-                                    4: 30,
-                                    5: 20,
-                                    10: 20,
-                                    20: 20,
-                                    50: 10,
+                            "mult_values":  = {
+    self.basegame_type: {3: 8, 4: 10, 5: 12},
+    self.freegame_type: {3: 8, 4: 10, 5: 12},
+                            }
                                 },
                             },
                             "scatter_triggers": {4: 1, 5: 2},
